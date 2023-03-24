@@ -3,6 +3,6 @@ defmodule DepTest do
   doctest Dep
 
   test "greets the world" do
-    Dep.hello()
+    Dep.read_from_priv() |> dbg
   end
 end
