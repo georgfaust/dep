@@ -9,6 +9,7 @@ defmodule Dep do
     IO.inspect :code.priv_dir(:dep)
     IO.puts "-- read file in priv"
     IO.inspect File.read(@privdir ++ '/test.txt')
+    IO.inspect File.read(:code.priv_dir(:dep) ++ '/test.txt')
     IO.puts "-- cwd"
     IO.inspect @cwd
     IO.inspect File.cwd
